@@ -1,0 +1,29 @@
+/* Profile photo container */
+.profile-photo-container {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 8px solid #fff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    position: relative;
+    z-index: 1;
+    transition: all 0.5s ease;
+    margin: 0 auto;
+    background-image: url('https://i.ibb.co/ygvKQDJ/yubaraj-profile.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.profile-photo-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    border-color: #003893;
+}
+
+@media screen and (max-width: 576px) {
+    .profile-photo-container {
+        width: 250px;
+        height: 250px;
+    }
+} 
